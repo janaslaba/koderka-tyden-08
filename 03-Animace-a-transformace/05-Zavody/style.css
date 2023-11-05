@@ -29,3 +29,33 @@ body {
 .raketka1 { top: 150px; }
 .raketka2 { top: 330px; }
 .raketka3 { top: 510px; }
+
+
+@keyframes pohyb {
+	0% {transform: translate(0, 0);}
+	15% {transform: translate(550px, 0);}
+	30% {transform: translate(845px, 0);}
+	45% {transform: translate(845px, 0) rotateZ(0deg);}
+	60% {transform: translate(700px, 0) rotateZ(180deg);}
+	75%	{transform: rotateZ(180deg) translate(-300px, 0);}
+	85%	{transform: rotateZ(180deg) translate(-250px, 0);}
+	90%	{transform: rotateZ(180deg) translate(-50px, 0);}
+	100% {transform: rotateZ(180deg) translate(0,0);}
+
+
+}
+
+.raketka1 {
+	animation: pohyb 30s;
+	animation-fill-mode: forwards;
+}
+
+.raketka2 {
+	animation: pohyb 15s 1s;
+	animation-fill-mode: both;
+}
+
+.raketka3 {
+	animation: pohyb 25s;
+	animation-fill-mode: both;
+}
