@@ -23,3 +23,14 @@ h2 {
 /* ----------------------- */
 
 
+.posun {
+	transform: translate(100px, 50px);
+}
+
+.rotace {
+	transform: rotate(30deg);
+}
+
+.zvetseni {
+	transform: scale(1.2);
+}

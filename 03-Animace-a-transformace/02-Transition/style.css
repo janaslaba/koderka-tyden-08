@@ -42,3 +42,11 @@ body {
 
 
 /* ------------------------------------------ */
+
+.ctverecek {
+	transition-duration: 2s;
+}
+
+.ctverecek:hover {
+	background-color: tomato;
+}

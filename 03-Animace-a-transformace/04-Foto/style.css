@@ -8,3 +8,46 @@ body {
 
 /* ---------------- */
 
+.foto {
+    overflow: hidden;
+    max-width: 300px;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.foto__description {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    transition: transform 0.5s;
+
+}
+
+.foto__description p {
+    margin: 0;
+    font-size: 10px;
+}
+.foto__image {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.foto a {
+    color: white;
+}
+
+.foto:hover .foto__description {
+    transform: translateY(-100%);
+}
+
+.foto:hover .foto__image {
+    transform: scale(1.2);
+}
+
+
